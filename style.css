@@ -1,0 +1,119 @@
+   *,::before,::after {margin: 0;box-sizing: border-box;}
+
+
+   ul {list-style: none; padding: 0;}
+   button {cursor: pointer;}
+   label {display: inline-block;}
+   img { vertical-align: bottom;}
+   a{text-decoration: none; display: inline-block;}
+
+   html {font-size: 15px; --red:#ca3c3c}
+   body {font: 16px/1.3 system-ui, sans-serif;}
+
+   .container {max-width: 1200px; margin: auto; padding: 0 1rem;}
+
+
+   .row{ display: grid; grid-template-columns: repeat(12,1fr); gap:2rem;}
+   .col-1 {grid-column: span 1;}
+   .col-2 {grid-column: span 2;}
+   .col-3 {grid-column: span 3;}
+   .col-4 {grid-column: span 4;}
+   .col-5 { grid-column: span 5;}
+   .col-6 {grid-column: span 6;}
+   .col-7 {grid-column: span 7;}
+   .col-8 {grid-column: span 8;}
+   .col-9 {grid-column: span 9;}
+   .col-10 {grid-column: span 10;}
+   .col-11 {grid-column: span 11;}
+   .col-12 {grid-column: span 12;}
+
+   .flex{display: flex;}
+   .justify-space-between{justify-content: space-between;}
+   .align-center{ align-items: center;}
+   .gap-y-4{row-gap: 4rem 0;}
+
+      /*layout*/
+      
+   header{background-color: #000; color: #fff; position: sticky; top: 0; z-index: 1;}
+   h1{font-size: 2rem;}
+   h1 a{color: inherit; line-height: 80px;}
+
+   nav li{ margin: 0 20px ;}
+   nav a{color: inherit; line-height: 80px ; padding: 0 1rem;}
+
+   .btn{ width: 90px; height: 35px; border: 2px solid; background: none; color:var(--red); border-radius: 10px; font-size: 16px;} 
+
+
+
+   .banner{ background-color: #666; color: white; padding: 15rem 0;}
+   .banner p{ font-size: 4rem; font-weight: 100;}
+   .banner a{ color: var(--red);}
+   .banner button{background: none; border: none; color: inherit; font-size: 10rem; margin-right: 40px ;}
+
+
+
+   section{ background-color: var(--red); color: #fff; padding: 50px 0;}
+   h2{ font-size: 72px; line-height: 60px; border-bottom: 9px solid; padding: 4px ;}
+   .circle{ width: 100px; aspect-ratio: 1/1; border: 2px solid; display: grid; place-content: center; border-radius: 50%; font-size: 36px; margin-right: 2rem;}
+
+
+   .wrap-3{ font-size: 16px;}
+   .wrap-3 h3{ line-height: 30px ;}
+   .wrap-3 p{ font-size: 14px; font-weight:100; line-height: 22px;}
+
+
+   .wrap-4{ background-color: #fff; color: var(--red); line-height: 10rem; font-size: 31px; text-align: center;}
+
+
+   .wrap-5{background: #ebebeb; color: #363636;}
+   .wrap-5 .btn{ margin: 2rem 10px 4rem 0;}
+   .wrap-5 .fill{ background-color: var(--red); color: #fff; border: var(--red);}
+
+   .project{ position: relative; overflow: hidden;}
+   .caption{ background-color: #fff; position: absolute; left: 0; right: 0; bottom: 0px; text-align: center; padding: 20px 0;opacity: 0; transition: 400ms;}
+   .caption h3{ color: var(--red); font-size: 18px; line-height: 20px;} 
+   .caption p{ font-weight: 100; font-size: 14px; color: #898989; line-height: 20px;}
+   .project:hover .caption{ opacity: 1;}
+   .project img{ width:100%;}
+   .more{  border: none; background: none; color: var(--red); font-size: 36px; margin-top: 2rem;}
+  
+
+
+
+      /*responsive*/
+
+
+   @media screen and (max-width:1220px) {html {font-size: 15px;}
+   h2{ font-size: 60px ;}}
+
+   @media screen and (max-width:980px) {
+   .col-t-1 {grid-column: span 1;}
+   .col-t-2 {grid-column: span 2;}
+   .col-t-3 {grid-column: span 3;}
+   .col-t-4 {grid-column: span 4;}
+   .col-t-5 { grid-column: span 5;}
+   .col-t-6 {grid-column: span 6;}
+   .col-t-7 {grid-column: span 7;}
+   .col-t-8 {grid-column: span 8;}
+   .col-t-9 {grid-column: span 9;}
+   .col-t-10 {grid-column: span 10;}
+   .col-t-11 {grid-column: span 11;}
+   .col-t-12 {grid-column: span 12;}
+   }
+   @media screen and (max-width:767px) {html {font-size: 12px;} .collapse{ display: none;}}
+
+   @media screen and (max-width:460px) {
+   .col-p-1 {grid-column: span 1;}
+   .col-p-2 {grid-column: span 2;}
+   .col-p-3 {grid-column: span 3;}
+   .col-p-4 {grid-column: span 4;}
+   .col-p-5 { grid-column: span 5;}
+   .col-p-6 {grid-column: span 6;}
+   .col-p-7 {grid-column: span 7;}
+   .col-p-8 {grid-column: span 8;}
+   .col-p-9 {grid-column: span 9;}
+   .col-p-10 {grid-column: span 10;}
+   .col-p-11 {grid-column: span 11;}
+   .col-p-12 {grid-column: span 12;}
+   .banner .flex{ font-size: 3rem; align-items: center; flex-wrap: wrap;}
+   }
