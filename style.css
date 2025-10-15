@@ -114,8 +114,8 @@
 .wrap-6  p{  font: 100 36px/1.14 var(--ff) }
 .wrap-6 img{ margin-top: 17px;}
 .wrap-6 b{ display: block; margin: 0.66rem 0 2rem;}
-/* .reviews blockquote{ display: none;}
-.reviews blockquote:first-child{ display: block;} */
+
+
 
 .wrap-6 .slick-slide img{ margin: auto; }
 .wrap-6 .slick-dots li button:before{ display: none; }
